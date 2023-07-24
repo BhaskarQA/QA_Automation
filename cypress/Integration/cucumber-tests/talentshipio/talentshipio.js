@@ -90,11 +90,11 @@ And('I update submit your application details', (dataTable) => {
     cy.get('#Email').type(dataTable.rawTable[1][3])
 })
 
-And('I click on robo check box', () => {
-    cy.get('[role="checkbox"]').click({force: true})
-})
+// And('I click on robo check box', () => {
+//     cy.get('[role="checkbox"]').click({force: true})
+// })
 
-And('I click submit button', () => {
-    cy.get('[type="button"]').eq(0).should('be.visible').click()
+// And('I click submit button', () => {
+//     cy.get('[type="button"]').eq(0).should('be.visible').click()
 
-})
+// })

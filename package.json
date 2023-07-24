@@ -19,9 +19,17 @@
     "prettier": "^3.0.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "cypress": "^12.17.1",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "multiple-cucumber-html-reporter": "^3.4.0"
   }
 }

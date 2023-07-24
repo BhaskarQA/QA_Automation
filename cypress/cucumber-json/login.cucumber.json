@@ -1,0 +1,61 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate Investor portal",
+    "line": 1,
+    "id": "validate-investor-portal",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "validate-investor-portal;verify-and-test-the-investor-fund-portal-dashboards",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify and test the investor fund portal dashboards",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I can launch the investor url",
+            "result": {
+              "status": "passed",
+              "duration": 2646000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I can login by using credentials",
+            "result": {
+              "status": "failed",
+              "duration": 90340000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#username`, but never found it.\n    at Context.eval (cypress/integration/cucumber-tests/login/login_steps.js:7:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I can verify the dashboard title timeline",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I can able to choose and select the investor",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

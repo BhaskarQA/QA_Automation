@@ -1,0 +1,192 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate talentship portal",
+    "line": 1,
+    "id": "validate-talentship-portal",
+    "tags": [],
+    "uri": "talentshipio.feature",
+    "elements": [
+      {
+        "id": "validate-talentship-portal;verify-and-test-the-talentshipio-portal-functionalities",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify and test the talentshipio portal functionalities",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I launch the talentship io portal",
+            "result": {
+              "status": "passed",
+              "duration": 15863000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I click on careers",
+            "result": {
+              "status": "passed",
+              "duration": 9542000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-talentship-portal;verify-and-test-the-talentshipio-dev-portal-functionalities",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "verify and test the talentshipio dev portal functionalities",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I launch talentshipio dev portal",
+            "result": {
+              "status": "passed",
+              "duration": 2925000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I select the Location",
+            "result": {
+              "status": "passed",
+              "duration": 195000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify the Current Job openings title",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I verify the talentship logo",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I can verify the departments and positions",
+            "result": {
+              "status": "passed",
+              "duration": 1227000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I can verify the hr email id",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click on show details",
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I can validate the headers",
+            "result": {
+              "status": "passed",
+              "duration": 474000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I click on Apply Now",
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstname",
+                      "lastname",
+                      "phonenumber",
+                      "email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test",
+                      "sample",
+                      "1111111111",
+                      "testsample@test.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I update submit your application details",
+            "result": {
+              "status": "passed",
+              "duration": 1196000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click on robo check box",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[role=\"checkbox\"]`, but never found it.\n    at Context.eval (cypress/integration/cucumber-tests/talentshipio/talentshipio.js:94:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I click submit button",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

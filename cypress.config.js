@@ -4,10 +4,9 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      on('file:preprocessor',cucumber())
-      // return require('./cypress/plugins/index.js')
+      on('file:preprocessor', cucumber())
     },
-    specPattern: 'cypress/integration/cucumber-tests/*.feature', 
+    specPattern: 'cypress/integration/cucumber-tests/*.feature',
 
   },
 })

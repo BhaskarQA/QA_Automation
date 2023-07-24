@@ -1,0 +1,27 @@
+{
+  "name": "qa_automation",
+  "version": "1.0.0",
+  "description": "Cypress with cucumber example",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:test": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "bdd",
+    "cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "prettier": "^3.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^12.17.1"
+  }
+}

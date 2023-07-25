@@ -22,7 +22,7 @@
             "name": "I launch the talentship io portal",
             "result": {
               "status": "passed",
-              "duration": 15863000000
+              "duration": 26557000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I click on careers",
             "result": {
               "status": "passed",
-              "duration": 9542000000
+              "duration": 14664000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "I launch talentshipio dev portal",
             "result": {
               "status": "passed",
-              "duration": 2925000000
+              "duration": 3768000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I select the Location",
             "result": {
               "status": "passed",
-              "duration": 195000000
+              "duration": 217000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I verify the Current Job openings title",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "I verify the talentship logo",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "I can verify the departments and positions",
             "result": {
               "status": "passed",
-              "duration": 1227000000
+              "duration": 1969000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "I click on show details",
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 101000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "I can validate the headers",
             "result": {
               "status": "passed",
-              "duration": 474000000
+              "duration": 377000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "I click on Apply Now",
             "result": {
               "status": "passed",
-              "duration": 93000000
+              "duration": 97000000
             }
           },
           {
@@ -163,26 +163,7 @@
             "name": "I update submit your application details",
             "result": {
               "status": "passed",
-              "duration": 1196000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "I click on robo check box",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[role=\"checkbox\"]`, but never found it.\n    at Context.eval (cypress/integration/cucumber-tests/talentshipio/talentshipio.js:94:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "I click submit button",
-            "result": {
-              "status": "skipped"
+              "duration": 1239000000
             }
           }
         ]

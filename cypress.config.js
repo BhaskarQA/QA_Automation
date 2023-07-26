@@ -9,6 +9,7 @@ module.exports = defineConfig({
       return require('./cypress/plugins/index.js')(on,config);
     },
     specPattern: 'cypress/integration/cucumber-tests/*.feature',
+    
 
   },
 })

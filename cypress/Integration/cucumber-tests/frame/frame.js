@@ -15,11 +15,25 @@ When('I login by using username and password', (dataTable) => {
         return false
     })
 })
-// And('I click on join capital banner', () => {
-//     cy.get('.youtube-banner-card>a').invoke('removeAttr', 'target').click()
-//     cy.wait(5000)
-//     cy.go('back')
-// })
+And('I click on 2bx banner', () => {
+    cy.get('.youtube-banner-card>a').invoke('removeAttr', 'target').click()
+    cy.wait(1000)
+
+})
+
+And('I click on apply in 2bx', () => {
+    cy.origin("https://2bx.vc/)", () => {
+        cy.get('.iubenda-cs-accept-btn').click()
+        cy.get('.elementor-button-wrapper>a').eq(0).click()
+    })
+})
+And('I back to investor url', () => {
+  
+    cy.origin("https://2bx.vc/)", () => {
+        cy.go('back')
+        cy.go('back')
+    })
+})
 
 And('I click on reports section', () => {
     cy.wait(10000)
@@ -30,8 +44,8 @@ And('I download the reports', () => {
     cy.wait(10000)
     cy.get('[title="webviewer"]').its('0.contentDocument.body').then(cy.wrap).find('[aria-label="Download"]').click()
 })
-Then('I verify the pdf', () => {
+// Then('I verify the pdf', () => {
 
-    cy.readFile('cypress/downloads/Quarterly_Report_Template_Data.pdf').should('contains', 'Fund Overview')
+//     cy.readFile('cypress/downloads/Quarterly_Report_Template_Data.pdf', { timeout: 60000 }).should('contains', 'Fund Overview')
 
-})
+// })

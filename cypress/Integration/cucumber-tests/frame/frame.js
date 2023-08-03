@@ -1,5 +1,6 @@
 import { And, Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
 
+
 Given('I launch investor portal', () => {
     cy.visit('https://investorportal.qa.ace-alternatives.com/')
 })
@@ -18,7 +19,6 @@ When('I login by using username and password', (dataTable) => {
 And('I click on 2bx banner', () => {
     cy.get('.youtube-banner-card>a').invoke('removeAttr', 'target').click()
     cy.wait(1000)
-
 })
 
 And('I click on apply in 2bx', () => {
@@ -45,7 +45,19 @@ And('I download the reports', () => {
     cy.get('[title="webviewer"]').its('0.contentDocument.body').then(cy.wrap).find('[aria-label="Download"]').click()
 })
 // Then('I verify the pdf', () => {
+//     // cy.fixture('cypress/downloads/Quarterly_Report_Template_Data.pdf','binary').then((pdfData) => {
+//     //     extractTextFromPDF(pdfData).then((extractedText) => {
+//     //     expect(extractedText).to.contain('Capital Account Table');
+//     // })
+  
+        
+//     // })
+//     const pdfFilePath = 'cypress/downloads/Quarterly_Report_Template_Data.pdf';
+//   return extractTextFromPDF(pdfFilePath).then((extractedText) => {
+//     // Use the extractedText as needed for validation or other purposes
+//     this.extractedText = extractedText;
 
-//     cy.readFile('cypress/downloads/Quarterly_Report_Template_Data.pdf', { timeout: 60000 }).should('contains', 'Fund Overview')
+//     expect(this.extractedText).to.contain('Capital Account Table');
+//   });
+// });
 
-// })

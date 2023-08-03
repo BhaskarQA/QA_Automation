@@ -11,4 +11,8 @@ Feature: Validate investor portal
         And I click on reports section
         And I download the reports
         # Then I verify the pdf
+        And I click on maximize button
+        And I click on minimize button
+        Then I verify the maximize
+        And I verify the minimize
 
